@@ -20,4 +20,7 @@ Projekt zawiera:
 2. Kliknij ikonę **Run** (jeśli edytujesz lokalnie) lub uruchom przez `python src/main.py`.
 3. ---
 ## 👤 Autor
-Projekt stworzony przez **Adriana** 🧠  
+Projekt stworzony przez **Adriana** 🧠
+
+# Sprawdzanie histori przez autora:
+- Edytuje tekst w celu sprawdzania histori
