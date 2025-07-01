@@ -1,3 +1,8 @@
+def hello():
+    print("Hello world!")
+def goodbye():
+    print("Goodbye world!")
+
 def main():
     show_menu()
     choice = input("Wybierz opcję: ")
