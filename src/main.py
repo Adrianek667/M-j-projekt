@@ -1,9 +1,15 @@
 def hello():
- feature/header-design-a
-    print("Hello user, its me, version A and B!")   
- main
+    print("Witaj użytkowniku 👋")
+
 def goodbye():
-    print("Goodbye user!")
+    print("Do zobaczenia! 👋")
+
+def show_menu():
+    print("\n--- MENU ---")
+    print("1. Przywitaj się")
+    print("2. Pomoc")
+    print("3. Wyjście")
+    print("4. Informacje")
 
 def start_app():
     show_menu()
@@ -15,19 +21,11 @@ def start_app():
         print("To jest przykładowa pomoc 🆘")
     elif choice == "3":
         goodbye()
+    elif choice == "4":
+        print("To aplikacja stworzona przez Adriana 👨‍💻")
     else:
-        print("Nieznana opcja.")
-# nowa opcja dodana w celu zadania z lab2
-def show_menu():
-    print("1. Start")
-    print("2. Pomoc")
-    print("3. Wyjście")
-    print("4. Informacje")  
+        print("Nieznana opcja. Spróbuj ponownie.")
 
-def start_app():
-    show_menu()
-    choice = input("Wybierz opcję: ")
-    if choice == "4":
-        print("To aplikacja stworzona przez Adrian 💡")
+if __name__ == "__main__":
+    start_app()
 
-     
