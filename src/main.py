@@ -5,7 +5,7 @@ def hello():
 def goodbye():
     print("Goodbye user!")
 
-def main():
+def start_app():
     show_menu()
     choice = input("Wybierz opcję: ")
 
@@ -24,7 +24,7 @@ def show_menu():
     print("3. Wyjście")
     print("4. Informacje")  
 
-def main():
+def start_app():
     show_menu()
     choice = input("Wybierz opcję: ")
     if choice == "4":
