@@ -1,9 +1,9 @@
 def hello():
  feature/header-design-a
-    print("Hello world, its me, version A and B!")   
+    print("Hello user, its me, version A and B!")   
  main
 def goodbye():
-    print("Goodbye world!")
+    print("Goodbye user!")
 
 def main():
     show_menu()
