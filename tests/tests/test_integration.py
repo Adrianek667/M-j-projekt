@@ -1,5 +1,6 @@
 from password_validator import is_valid_password
 
+
 def test_password_flow():
     cases = {
         "Test1234": True,
