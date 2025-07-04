@@ -19,9 +19,11 @@ jobs:
       with:
         python-version: '3.11'
 
+    - name: Install Railway CLI
+      run: npm install -g railway
+
     - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+      run: pip install -r requirements.txt
 
     - name: Lint with flake8
       run: flake8 src/ tests/
@@ -30,4 +32,5 @@ jobs:
       run: pytest
 
     - name: Deploy to Railway
-  run: railway up --token ${{ secrets.RAILWAY_TOKEN }}
+      run: railway up --token ${{ secrets.RAILWAY_TOKEN }}
+
