@@ -29,6 +29,5 @@ jobs:
     - name: Run tests
       run: pytest
 
-    - name: Deploy (example)
-      if: success()
-      run: echo "Tutaj dodaj polecenie deploya – SSH, webhook lub Railway CLI"
+    - name: Deploy to Railway
+  run: railway up --token ${{ secrets.RAILWAY_TOKEN }}
