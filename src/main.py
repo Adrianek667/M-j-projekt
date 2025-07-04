@@ -1,31 +1,44 @@
-def hello():
-    print("Witaj użytkowniku 👋")
+import os
+
 
 def goodbye():
-    print("Do zobaczenia! 👋")
+    print("\n👋 Dzięki za skorzystanie z aplikacji!\n")
 
-def show_menu():
-    print("\n--- MENU ---")
-    print("1. Przywitaj się")
-    print("2. Pomoc")
-    print("3. Wyjście")
-    print("4. Informacje")
 
-def start_app():
-    show_menu()
-    choice = input("Wybierz opcję: ")
+def emergency_help():
+    print("\n🆘 Funkcja pomocy awaryjnej jest jeszcze w budowie...\n")
+
+
+def developer_info():
+    print("\n🧑‍💻 Autor: Adrian | Projekt Railway CI/CD\n")
+
+
+def password_strength_check():
+    print("\n🔒 Sprawdzanie siły hasła...\n")
+    # Tutaj może być logika z password_validator
+
+
+def main_menu():
+    print("\n=== MENU GŁÓWNE ===")
+    print("1. Informacje o programie")
+    print("2. Sprawdź hasło")
+    print("3. Pomoc awaryjna")
+    print("4. Wyjście")
+
+    choice = input("Wybierz opcję (1-4): ")
 
     if choice == "1":
-        hello()
+        developer_info()
     elif choice == "2":
-        print("To jest przykładowa pomoc 🆘")
+        password_strength_check()
     elif choice == "3":
-        goodbye()
+        emergency_help()
     elif choice == "4":
-        print("To aplikacja stworzona przez Adriana 👨‍💻")
+        goodbye()
     else:
-        print("Nieznana opcja. Spróbuj ponownie.")
+        print("\n⚠️ Niepoprawna opcja. Spróbuj ponownie.\n")
+
 
 if __name__ == "__main__":
-    start_app()
-
+    while True:
+        main_menu()
